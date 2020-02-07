@@ -1,6 +1,6 @@
 #!/bin/bash -x
 
-x=100
-y=100
+read -p "Enter value of x = " x
+read -p "Enter value of y = " y
 z=$(( $x + $y ))
 echo sum=$z 
