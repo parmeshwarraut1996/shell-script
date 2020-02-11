@@ -1,4 +1,7 @@
 #!/bin/bash -x
-random1=` expr 1 + $RANDOM % 6 `
-random2=` expr 1 + $RANDOM % 6 `
-echo sum=$(( random1 + random2 ))
+for (( i=0;i<5;i++ ))
+do
+	random=` expr 1 + $RANDOM % 60 `
+ 	sum=`expr $sum + $random `
+	echo $sum
+done
